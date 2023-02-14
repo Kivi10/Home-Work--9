@@ -11,7 +11,12 @@ int Promt(string msg)
 
 void Chet(int num1, int num2)
 {
-    //if (num2 <= 1) System.Console.WriteLine("Второе число должно быть больше 0 и не равняться единице"); Environment.Exit(1);
+    if (num2 <= 1) 
+    {
+        System.Console.WriteLine("Второе число должно быть больше 0 и не равняться единице"); 
+        Environment.Exit(1);
+    }
+    
     if (num1 % 2 == 1) num1++;
     if (num1 > num2) return;
     System.Console.Write(num1 + "; ");
