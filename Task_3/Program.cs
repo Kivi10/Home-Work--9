@@ -16,7 +16,8 @@ int AckermanFun(int m, int n)
     {
         return n + 1;
     }
-    else if (n == 0)
+    else
+    if (n == 0)
     {
         return AckermanFun(m - 1, 1);
     }
@@ -28,5 +29,5 @@ int AckermanFun(int m, int n)
 
 int m = Promt("Введите первое число");
 int n = Promt("Введите второе число");
-int result = AckermanFun(m,n);
+int result = AckermanFun(m, n);
 System.Console.WriteLine(result);
